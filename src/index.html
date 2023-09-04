@@ -8,6 +8,30 @@
   <body>
     <div id="app"></div>
 
+    <strong>Uniswap V3 NFT id: </strong>
+    <input id="nftId" />
+
+    <strong>Block number (optional):</strong>
+    <input id="blockNumber" />
+
+    <button class="btn btn-primary" id="snapshotButton">
+      Get snapshot
+    </button>
+
+    <p class="error"></p>
+
+    <div id="results">
+      <p class="position0"></p>
+      <p class="position1"></p>
+      <p class="unclaimed0"></p>
+      <p class="unclaimed1"></p>
+    </div>
+
     <script src="./index.mjs" type="module"></script>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
   </body>
 </html>
